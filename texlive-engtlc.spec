@@ -1,3 +1,9 @@
+# revision 17077
+# category Package
+# catalog-ctan /macros/latex/contrib/engtlc
+# catalog-date 2010-03-16 18:34:36 +0100
+# catalog-license lppl
+# catalog-version 2.0
 Name:		texlive-engtlc
 Version:	2.0
 Release:	1
@@ -40,6 +46,7 @@ used in Telecommunications Engineering.
 %doc %{_texmfdistdir}/doc/latex/engtlc/eng_engtlc.pdf
 %doc %{_texmfdistdir}/doc/latex/engtlc/engtlc.tex
 %doc %{_texmfdistdir}/doc/latex/engtlc/ita_engtlc.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,3 +57,5 @@ used in Telecommunications Engineering.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
