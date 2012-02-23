@@ -1,12 +1,12 @@
-# revision 17077
+# revision 25432
 # category Package
 # catalog-ctan /macros/latex/contrib/engtlc
-# catalog-date 2010-03-16 18:34:36 +0100
+# catalog-date 2012-02-19 15:32:47 +0100
 # catalog-license lppl
-# catalog-version 2.0
+# catalog-version 3.1
 Name:		texlive-engtlc
-Version:	2.0
-Release:	2
+Version:	3.1
+Release:	1
 Summary:	Support for users in Telecommunications Engineering
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/engtlc
@@ -34,9 +34,10 @@ used in Telecommunications Engineering.
 %files
 %{_texmfdistdir}/tex/latex/engtlc/engtlc.sty
 %doc %{_texmfdistdir}/doc/latex/engtlc/README
-%doc %{_texmfdistdir}/doc/latex/engtlc/eng_engtlc.pdf
+%doc %{_texmfdistdir}/doc/latex/engtlc/engtlc.pdf
 %doc %{_texmfdistdir}/doc/latex/engtlc/engtlc.tex
-%doc %{_texmfdistdir}/doc/latex/engtlc/ita_engtlc.pdf
+%doc %{_texmfdistdir}/doc/latex/engtlc/itengtlc.pdf
+%doc %{_texmfdistdir}/doc/latex/engtlc/itengtlc.tex
 
 #-----------------------------------------------------------------------
 %prep
