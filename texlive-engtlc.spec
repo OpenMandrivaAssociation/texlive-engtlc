@@ -48,3 +48,21 @@ used in Telecommunications Engineering.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.1-1
++ Revision: 779451
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0-2
++ Revision: 751470
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0-1
++ Revision: 718336
+- texlive-engtlc
+- texlive-engtlc
+- texlive-engtlc
+- texlive-engtlc
+
