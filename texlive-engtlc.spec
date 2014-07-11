@@ -6,7 +6,7 @@
 # catalog-version 3.2
 Name:		texlive-engtlc
 Version:	3.2
-Release:	6
+Release:	7
 Summary:	Support for users in Telecommunications Engineering
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/engtlc
