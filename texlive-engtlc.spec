@@ -1,18 +1,12 @@
-# revision 28571
-# category Package
-# catalog-ctan /macros/latex/contrib/engtlc
-# catalog-date 2012-12-18 12:17:57 +0100
-# catalog-license lppl1.3
-# catalog-version 3.2
 Name:		texlive-engtlc
-Version:	3.2
-Release:	10
+Version:	28571
+Release:	1
 Summary:	Support for users in Telecommunications Engineering
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/engtlc
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/engtlc.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/engtlc.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/engtlc.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/engtlc.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ The package provides a wide range of abbreviations for terms
 used in Telecommunications Engineering.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -41,7 +35,7 @@ used in Telecommunications Engineering.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
